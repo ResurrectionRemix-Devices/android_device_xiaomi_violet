@@ -250,6 +250,10 @@ PRODUCT_PACKAGES += \
 # Signing Keys
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/oss/keys/releasekey
 
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
