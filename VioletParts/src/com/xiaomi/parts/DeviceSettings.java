@@ -30,6 +30,7 @@ import androidx.preference.SwitchPreference;
 import android.util.Log;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
+import com.xiaomi.parts.speaker.ClearSpeakerActivity;
 import com.xiaomi.parts.preferences.VibratorStrengthPreference;
 import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
@@ -52,6 +53,8 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_HEADSET = "dirac_headset_pref";
     public static final String PREF_PRESET = "dirac_preset_pref";
 
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
     final static String PREF_TORCH_BRIGHTNESS = "torch_brightness";
@@ -63,6 +66,8 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private Preference mKcal;
     private SecureSettingSwitchPreference mFastcharge;
+    private Preference mClearSpeakerPref;
+    private Preference mAmbientPref;
     private CustomSeekBarPreference mTorchBrightness;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
@@ -81,6 +86,14 @@ public class DeviceSettings extends PreferenceFragment implements
 
         mKcal.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
             startActivity(intent);
             return true;
         });
