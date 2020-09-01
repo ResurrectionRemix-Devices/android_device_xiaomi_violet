@@ -9,8 +9,17 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common Resurrection stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit GApps
+$(call inherit-product, vendor/gapps/gapps.mk)
 TARGET_GAPPS_ARCH := arm64
+GAPPS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+DEVICE_PACKAGE_OVERLAYS += \
+	$(LOCAL_PATH)/overlay-gms
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
