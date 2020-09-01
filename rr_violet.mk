@@ -10,7 +10,15 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Resurrection stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit GApps
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gms/products/gms.mk)
 TARGET_GAPPS_ARCH := arm64
+WITH_GMS := true
+DEVICE_PACKAGE_OVERLAYS += \
+	$(LOCAL_PATH)/overlay-gms
+endif
 
 # RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
