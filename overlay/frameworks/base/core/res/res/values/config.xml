@@ -625,4 +625,6 @@
     <!-- Enable Smart charging. -->
     <bool name="config_deviceSupportSmartCharging">true</bool>
 
+    <!-- SBC HD audio dual channel support -->
+    <bool name="config_enableSBCDualChannelAudio">false</bool>
 </resources>
