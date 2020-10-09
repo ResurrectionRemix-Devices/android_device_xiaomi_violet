@@ -16,6 +16,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 RR_BUILDTYPE := Official
 
+# RR Wallpapers
+BUILD_RR_WALLPAPERS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := rr_violet
 PRODUCT_DEVICE := violet
