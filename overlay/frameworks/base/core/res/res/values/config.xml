@@ -61,4 +61,7 @@
 
     <!-- SBC HD audio dual channel support -->
     <bool name="config_enableSBCDualChannelAudio">false</bool>
+
+    <!-- Advanced restart -->
+    <bool name="config_powermenuadvanceddefault">true</bool>
 </resources>
