@@ -265,15 +265,6 @@
       "HoldFd": true
     },
     {
-      "Name": "ForegroundCpuset",
-      "Path": "/dev/cpuset/foreground/cpus",
-      "Values": [
-        "0-5",
-        "0-5,7"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "EnergyAware",
       "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
@@ -387,12 +378,6 @@
       "Duration": 0,
       "Value": "2086"
     },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "ForegroundCpuset",
-      "Duration": 5000,
-      "Value": "0-5"
-    }, 
     {
       "PowerHint": "LAUNCH",
       "Node": "EnergyAware",
