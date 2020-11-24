@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    Snap \
+    GoogleCameraGo \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # CNE
