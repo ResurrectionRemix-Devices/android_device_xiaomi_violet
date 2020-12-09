@@ -64,4 +64,7 @@
 
     <!-- Advanced restart -->
     <bool name="config_powermenuadvanceddefault">true</bool>
+
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
 </resources>
