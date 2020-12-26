@@ -28,5 +28,8 @@
     <!-- Device supports internal audio recording -->
     <bool name="config_recorderInternalAudio">false</bool>
 
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
 </resources>
 
