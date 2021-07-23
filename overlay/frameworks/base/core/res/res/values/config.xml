@@ -604,6 +604,10 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -80,0 L -80,80 L 80,80 L 80,0 Z</string>
 
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">80.0px</dimen>
+    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
     <!-- SysInfo for Violet -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
