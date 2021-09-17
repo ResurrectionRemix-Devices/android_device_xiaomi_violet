@@ -18,6 +18,7 @@
 
        <Preference
         android:key="header"
+        app:allowDividerBelow="false"
         android:layout="@layout/header_animation" />
 
     <PreferenceCategory
@@ -40,6 +41,7 @@
             android:icon="@drawable/ic_thermal_settings"
             android:key="thermal_profiles"
             android:summary="@string/thermal_summary"
+            app:allowDividerBelow="false"
             android:title="@string/thermal_title">
             <intent
                 android:action="android.intent.action.MAIN"
@@ -55,6 +57,7 @@
             android:key="fastcharge"
             android:defaultValue="true"
             android:title="@string/fastcharge_title"
+            app:allowDividerBelow="false"
             android:icon="@drawable/ic_usb_fastcharge"
             android:summary="@string/fastcharge_summary" />
     </PreferenceCategory>
@@ -67,6 +70,7 @@
             android:icon="@drawable/ic_dirac"
             android:key="dirac_headset_pref"
             android:summary="@string/dirac_summary"
+            app:allowDividerBelow="false"
             android:title="@string/dirac_title">
             <intent
                 android:action="android.intent.action.MAIN"
@@ -82,6 +86,7 @@
         <Preference
             android:key="clear_speaker_settings" 
             android:title="@string/clear_speaker_title"
+            app:allowDividerBelow="false"
             android:icon="@drawable/ic_speaker_cleaner_icon" >
             <intent
                 android:action="android.intent.action.MAIN"
@@ -98,6 +103,7 @@
             android:defaultValue="80"
             android:key="vibration_strength"
             android:icon="@drawable/ic_vibrate"
+            app:allowDividerBelow="false"
             android:max="100"
             android:title="@string/vibration_strength_title"
             app:min="1"
